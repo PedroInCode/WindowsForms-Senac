@@ -17,7 +17,7 @@ namespace LabWindowsForms
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Confirmar_Click(object sender, EventArgs e)
         {
             //MessageBox.Show("WINDOWS FORMS É UMA BOSTA.");
 
@@ -38,6 +38,24 @@ namespace LabWindowsForms
         private void Form1_Load(object sender, EventArgs e)
         {
            
+        }
+
+        private void btn_Cadastrar_Click(object sender, EventArgs e)
+        {
+            string nome = this.txt_Nome.Text;
+            string endereco = this.txt_Endereco.Text;
+            string cpf = this.mtb_Documento.Text;
+            string telefone = this.mtb_Telefone.Text;
+            string genero = this.cmb_Genero.Text;
+            string nascimento = this.dtp_Nascimento.Value.ToShortDateString();
+
+            MessageBox.Show($"Nome cadastrado: {nome} \n" +
+                $"Endereço: {endereco} \n" +
+                $"CPF: {cpf} \n" +
+                $"Telefone: {telefone} \n" +
+                $"Gênero: {genero} \n" +
+                $"Nascimento: {nascimento}"
+                );
         }
     }
 }
