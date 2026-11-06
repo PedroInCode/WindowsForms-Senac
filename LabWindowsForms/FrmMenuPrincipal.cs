@@ -16,5 +16,24 @@ namespace LabWindowsForms
         {
             InitializeComponent();
         }
+
+        private void ajudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ajuda não disponível no momento.");
+        }
+
+        private void pessoaFísicaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.ShowDialog();
+        }
+
+        private void pessoaJuridicaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCadPessoaJuridica frmCadPessoaJuridica = new FrmCadPessoaJuridica();
+            frmCadPessoaJuridica.ShowDialog();
+        }
+
+        
     }
 }
