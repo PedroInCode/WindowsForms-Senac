@@ -16,7 +16,7 @@ namespace LabWindowsForms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmCadPessoaJuridica());
+            Application.Run(new Frm_Login());
         }
     }
 }
