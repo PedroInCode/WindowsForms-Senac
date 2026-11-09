@@ -47,7 +47,7 @@
             // 
             // pnl_menu
             // 
-            this.pnl_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.pnl_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.pnl_menu.Controls.Add(this.label1);
             this.pnl_menu.Cursor = System.Windows.Forms.Cursors.Default;
             this.pnl_menu.Dock = System.Windows.Forms.DockStyle.Top;
@@ -60,11 +60,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(24, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(324, 31);
+            this.label1.Size = new System.Drawing.Size(348, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cadastro Pessoa Jurídica";
             // 
