@@ -57,7 +57,7 @@ namespace LabWindowsForms
                     MessageBoxIcon.Information
                 );
 
-                FrmMenuPrincipal frmMenuPrincipal = new FrmMenuPrincipal();
+                FrmMenuPrincipal frmMenuPrincipal = new FrmMenuPrincipal(usuarioEncontrado);
                 frmMenuPrincipal.ShowDialog();
                 this.Hide();
             }

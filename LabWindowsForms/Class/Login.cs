@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LabWindowsForms.Class
 {
-    internal class Login
+    public class Login
     {
         private int _id;
         private string _username;
