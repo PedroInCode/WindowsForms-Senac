@@ -16,7 +16,17 @@ namespace LabWindowsForms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_Login());
+
+            Frm_Login frmLogin = new Frm_Login();
+            
+            if(frmLogin.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new FrmMenuPrincipal(frmLogin.usuarioEncontrado));
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
     }
 }

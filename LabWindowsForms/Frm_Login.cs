@@ -14,6 +14,7 @@ namespace LabWindowsForms
     public partial class Frm_Login : Form
     {
         List<Login> users = new List<Login>();
+        public Login usuarioEncontrado;
 
         public Frm_Login()
         {
@@ -39,7 +40,7 @@ namespace LabWindowsForms
 
             ValidarCampos(textoLogin, textoSenha);
 
-            Login usuarioEncontrado = users.FirstOrDefault(user => user.Authenticate(textoLogin, textoSenha));
+            usuarioEncontrado = users.FirstOrDefault(user => user.Authenticate(textoLogin, textoSenha));
 
             if (usuarioEncontrado == null)
             {
@@ -51,15 +52,10 @@ namespace LabWindowsForms
             }
             else
             {
-                MessageBox.Show($"Bem-vindo {usuarioEncontrado.Username}!",
-                    "SUCESSO",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information
-                );
+                MessageBox.Show($"Bem-vindo {usuarioEncontrado.Username}!");
 
-                FrmMenuPrincipal frmMenuPrincipal = new FrmMenuPrincipal(usuarioEncontrado);
-                frmMenuPrincipal.ShowDialog();
-                this.Hide();
+                this.DialogResult = DialogResult.OK;
+                this.Close();
             }
         }
 
